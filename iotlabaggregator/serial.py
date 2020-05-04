@@ -198,7 +198,7 @@ class SerialAggregator(connections.Aggregator):
     def read_input(self):
         """ Read input and sends the messages to the given nodes """
         while True:
-            line = raw_input()
+            line = input()
             nodes, message = self.extract_nodes_and_message(line)
 
             if (None, '') != (nodes, message):

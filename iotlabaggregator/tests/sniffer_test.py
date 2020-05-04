@@ -85,7 +85,7 @@ class TestSnifferHandleRead(unittest.TestCase):
     def test_read_ret_values(self):
         for i in range(1, 100):
             self.outfd.reset_mock()
-            print i
+            print(i)
             self.read_return_n_char_per_call(i)
 
     def read_return_n_char_per_call(self, num_chars):
